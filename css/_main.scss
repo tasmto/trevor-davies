@@ -1,0 +1,113 @@
+*::selection {
+  background: $red !important;
+  color: white;
+}
+
+body {
+  background: $white;
+ 
+  .wrapper {
+    overflow: hidden;
+  }
+}
+
+
+//#############   SMALL PHONES AND WATCHES
+@media only screen and (min-width: 0px) {
+  .wrap{
+    padding: 0 2em;
+  }
+
+  .main__content_container{
+    .left__column{
+      background: linear-gradient(315.91deg, #003D63 -10.95%, rgba(155, 45, 31, 0) 70.22%), #151515;
+      padding: $large_space*3 0 $large_space*2;
+      margin-bottom: $large_space;
+
+      article{
+        h1, p{
+          color: $white;
+        }
+      }
+
+  }
+
+    .right__column{
+      .contact_info__container{
+        margin-bottom: $large_space;
+        .contact_info__block{
+          margin-bottom: $extra_small_space;
+          a{
+            text-decoration: none;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            p{
+              display: inline;
+              font-weight: 600;
+              color: $red;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+//#############  PHONES AND TABLETS
+@media only screen and (min-width: 480px) {
+
+
+}
+
+//#############  TABLETS TO LAPTOP SCREENS
+@media only screen and (min-width: 801px) {
+    .wrap{
+      padding: 0 4em;
+    }
+    main{
+      height: 90vh;
+    }
+    .main__content_container{
+      position: relative;
+      height: 90vh;
+      & > *{
+        width: 50%;
+      }
+      .left__column{
+        float: left;
+        padding: 0;
+        height: 90vh;
+        position: relative;
+        
+        article{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%)  !important;
+        }
+
+      }
+      .right__column{
+        position: absolute;
+        float: right;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+      }
+
+    }
+
+  }
+//###############   DESKTOP SCREENS AND TV's
+@media only screen and (min-width: 1300px) {
+
+  .wrap{
+    padding: 0 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

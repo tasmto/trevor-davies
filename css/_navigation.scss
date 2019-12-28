@@ -1,0 +1,67 @@
+header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: $mid_space;
+    z-index: 5;
+
+    .logo_container{
+        text-align: center;
+     a{ 
+        text-decoration: none;
+        display: block;
+        max-width: 254px;
+        min-width: 200px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+        h1{
+            font-size: 1.5em;
+            color: $white;
+            display: block;
+        }
+    }
+}
+}
+
+footer{
+    width: 100vw;
+    div{
+        padding: $mid_space 0;
+        text-align: center;
+        p{
+            color: rgb(141, 141, 141);
+        }
+    }
+}
+
+
+//#############  TABLETS TO LAPTOP SCREENS
+@media only screen and (min-width: 801px) {
+    header{
+        left: 4em;
+        transform: translateX(0);
+        div{
+            padding: 0 !important;
+        }
+    }
+
+    footer{
+      position: relative;
+      height: 10vh;
+      width: 100vw;
+      div{
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%) translateX(50%);
+
+        p.sub__paragraph_style{
+            color: rgba(59, 59, 59, 0.74);
+        }
+      }
+    }
+}

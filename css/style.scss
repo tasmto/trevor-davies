@@ -1,0 +1,22 @@
+//THE CSS STYLE RESET FILE
+@import "html-css-reset";
+
+//COLOR AND SPACING CONSTANTS LIVE HERE
+@import "custom-properties";
+
+//TEXT RELATED STYLES (ON A BROADER SCOPE LIVE HERE
+@import "type";
+
+//THE NAV BAR AND FOOTER
+@import "navigation";
+
+//ANY FANCY COMPONENT (sliders etc...)
+@import "components";
+
+//ANY OTHER STYLES
+@import "main"
+
+
+
+
+

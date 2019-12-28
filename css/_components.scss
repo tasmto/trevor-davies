@@ -1,0 +1,53 @@
+//#############   SMALL PHONES AND WATCHES
+@media only screen and (min-width: 0px) {
+    .decorative_squares__container{
+        display: none;
+      }
+
+      
+    .store_location__map_container{
+        iframe{
+            width: 100%;
+        }
+    }
+    }
+
+@media only screen and (min-width: 801px) {
+
+
+    .decorative_squares__container{
+        clip-path: inset(0 45% 0 0);
+        height: 70%;
+        width: 100vw;
+        pointer-events: none;
+        z-index: 5;
+        display: block;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+
+
+        .proto{
+            border: 2px solid $white;
+            opacity: 0.045;
+            width: 15%;
+            height: 60%;
+            float: left;
+            margin-left: 1em;
+            transform: translateX(10%) skew(30deg, 0deg);
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+
+    .decorative_squares__container{
+        .proto{
+            margin: 2em;
+        }
+    }
+}
